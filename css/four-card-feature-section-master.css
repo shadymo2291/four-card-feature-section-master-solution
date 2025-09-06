@@ -1,0 +1,177 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffffff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --card-background-color: #ffffffff;
+    --p_color: #697077ff;
+    --header-color: #4c4e61ff;
+    --border-1-color: #45d3d3ff;
+    --border-2-color: #ea5353ff;
+    --border-3-color: #fcaf4aff;
+    --border-4-color: #549ef2ff;
+    --p_Font_size: 15px;
+    --border-radius: 10px;
+}
+/* main part start */
+main {
+    width: 950px;
+    margin: 50px auto 0;
+}
+main > h1 {
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--border-1-color), var(--border-2-color), var(--border-4-color));
+    text-transform: capitalize;
+    font-weight: 800;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+main:hover h1 {
+    transform: rotateX(0deg);
+}
+@media (max-width: 768px) {
+    main {
+        width: 375px;
+    }
+    main > h1 {
+        font-size: 35px;
+        line-height: 1.4;
+    }
+}
+main h2 {
+    font-weight: 300;
+    color: var(--header-color);
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+main h2 span {
+    letter-spacing: .7px;
+    font-weight: 600;
+}
+main > p {
+    max-width: 400px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--p_color);
+    margin: 0 auto 50px;
+    line-height: 1.4;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    align-items: center;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    section {
+        width: 320px;
+        grid-template-columns: 1fr;
+    }
+    main > h2 {
+        font-size: 25px;
+    }
+    main > h2 span {
+        letter-spacing: normal;
+    }
+    main > p {
+        width: 310px;
+        font-size: 15px;
+    }
+}
+.column.two {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Supervisor,
+.Team.Builder,
+.Karma,
+.Calculator {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 5px 25px -20px rgb(23, 66, 115);
+    position: relative;
+}
+.Supervisor::before,
+.Team.Builder::before,
+.Karma::before,
+.Calculator::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Supervisor::before {
+    background-color: var(--border-1-color);
+}
+.Team.Builder::before {
+    background-color: var(--border-2-color);
+}
+.Karma::before {
+    background-color: var(--border-3-color);
+}
+.Calculator::before {
+    background-color: var(--border-4-color);
+}
+div > h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--header-color);
+    margin-bottom: 10px;
+}
+div > p {
+    color: var(--p_color);
+    line-height: 1.5;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+div > img {
+    width: 60px;
+    display: block;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+/* footer start */
+footer {
+    padding-top: 30px;
+    z-index: 10;
+}
+footer P {
+    text-align: center;
+    font-size: 13px;
+    margin: 0 auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--border-1-color), var(--border-2-color), var(--border-4-color));
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+footer span {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 800;
+}
+@media (max-width: 768px) {
+    footer P {
+        width: 210px;
+    }
+}
