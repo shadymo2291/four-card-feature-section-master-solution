@@ -10,7 +10,7 @@
 
 ### Links
 
-- Solution URL:
+- Solution URL: https://github.com/shadymo2291/four-card-feature-section-master-solution
 
 ### Built with
 
@@ -31,31 +31,30 @@ To see how you can add code snippets, see below:
 
 main:hover h1 {
 transform: rotateX(0deg);
-
 }
 @media (max-width: 768px) {
-main {
-width: 375px;
-}
-main > h1 {
-font-size: 35px;
-line-height: 1.4;
-}
+  main {
+    width: 375px;
+  }
+  main > h1 {
+    font-size: 35px;
+    line-height: 1.4;
+  }
 }
 footer span {
-font-size: 12px;
-cursor: pointer;
-font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 800;
 }
 @media (max-width: 768px) {
-footer P {
-width: 210px;
-}
+  footer P {
+    width: 210px;
+  }
 }
 
 ### Continued development
 
-I want to learn more about responsive websites and how to use the pseudo-elements and hover effect
+I want to learn more about responsive websites and how to use the pseudo-elements and the hover effect
 
 ### Useful resources
 
